@@ -16,6 +16,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".tutorialtips.TutorialActivity"
+            android:parentActivityName=".MainActivity"
+             />
     </application>
 
 </manifest>
