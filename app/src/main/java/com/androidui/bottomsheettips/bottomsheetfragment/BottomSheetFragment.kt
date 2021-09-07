@@ -136,10 +136,27 @@ class BottomSheetFragment() : BottomSheetDialogFragment() {
         val itemOne = TutorialItem(R.drawable.on_the_way,"Keep Accurate Records", "To keep records, find the best database")
         val itemTwo = TutorialItem(R.drawable.pay_online,"Track Sales and Records", "Use the products page to  monitor products!")
         val itemThree = TutorialItem(R.drawable.eat_together,"Efficient Accounting System", "Use the report page to view income and loss")
+        val itemFour = TutorialItem(R.drawable.on_the_way,"Keep Accurate Records", "To keep records, find the best database")
+        val itemFive = TutorialItem(R.drawable.pay_online,"Track Sales and Records", "Use the products page to  monitor products!")
+        val itemSix = TutorialItem(R.drawable.eat_together,"Efficient Accounting System", "Use the report page to view income and loss")
+        val itemSeven = TutorialItem(R.drawable.on_the_way,"Keep Accurate Records", "To keep records, find the best database")
+        val itemEight = TutorialItem(R.drawable.pay_online,"Track Sales and Records", "Use the products page to  monitor products!")
+        val itemNine = TutorialItem(R.drawable.eat_together,"Efficient Accounting System", "Use the report page to view income and loss")
+        val itemTen = TutorialItem(R.drawable.on_the_way,"Keep Accurate Records", "To keep records, find the best database")
+        val itemEleven = TutorialItem(R.drawable.pay_online,"Track Sales and Records", "Use the products page to  monitor products!")
 
         tutorialItems.add(itemOne)
         tutorialItems.add(itemTwo)
         tutorialItems.add(itemThree)
+        tutorialItems.add(itemFour)
+        tutorialItems.add(itemFive)
+        tutorialItems.add(itemSix)
+        tutorialItems.add(itemSeven)
+        tutorialItems.add(itemEight)
+        tutorialItems.add(itemNine)
+        tutorialItems.add(itemTen)
+        tutorialItems.add(itemEleven)
+
         tutorialAdapter = TutorialAdapter(tutorialItems)
     }
 }
