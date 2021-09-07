@@ -133,13 +133,13 @@ class BottomSheetFragment() : BottomSheetDialogFragment() {
     private fun setTutorialItem() {
 
         val tutorialItems: MutableList<TutorialItem> = ArrayList()
-        val itemFast = TutorialItem(R.drawable.on_the_way,"Fast Delivery to your home", "Our delivery partner is on the way to your home!")
-        val itemPay = TutorialItem(R.drawable.pay_online,"Fast Delivery to your home", "Our delivery partner is on the way to your home!")
-        val itemEat = TutorialItem(R.drawable.eat_together,"Fast Delivery to your home", "Our delivery partner is on the way to your home!")
+        val itemOne = TutorialItem(R.drawable.on_the_way,"Keep Accurate Records", "To keep records, find the best database")
+        val itemTwo = TutorialItem(R.drawable.pay_online,"Track Sales and Records", "Use the products page to  monitor products!")
+        val itemThree = TutorialItem(R.drawable.eat_together,"Efficient Accounting System", "Use the report page to view income and loss")
 
-        tutorialItems.add(itemFast)
-        tutorialItems.add(itemPay)
-        tutorialItems.add(itemEat)
+        tutorialItems.add(itemOne)
+        tutorialItems.add(itemTwo)
+        tutorialItems.add(itemThree)
         tutorialAdapter = TutorialAdapter(tutorialItems)
     }
 }
