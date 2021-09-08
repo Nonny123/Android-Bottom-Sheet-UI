@@ -2,10 +2,8 @@ package com.androidui.bottomsheettips
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
 import android.widget.Button
-import com.androidui.bottomsheet.BottomSheetFragment
-import com.google.android.material.bottomsheet.BottomSheetDialog
+import com.androidui.bottomsheettips.bottomsheetfragment.BottomSheetFragment
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

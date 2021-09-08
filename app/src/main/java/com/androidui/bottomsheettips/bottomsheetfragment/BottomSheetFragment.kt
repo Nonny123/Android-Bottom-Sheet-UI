@@ -1,4 +1,4 @@
-package com.androidui.bottomsheet
+package com.androidui.bottomsheettips.bottomsheetfragment
 
 import android.annotation.SuppressLint
 import android.content.Intent
@@ -44,7 +44,7 @@ class BottomSheetFragment() : BottomSheetDialogFragment() {
 
     private fun initView() {
 
-        /*initiazile views*/
+        /*initialize views*/
         layoutTutorialIndicator = requireView().findViewById(R.id.layoutTutorialIndicators)
         buttonTutorialAction = requireView().findViewById(R.id.buttonTutorialAction)
 
@@ -77,6 +77,7 @@ class BottomSheetFragment() : BottomSheetDialogFragment() {
 
     }
 
+
     private fun setTutorialIndicator() {
         val indicators: Array<ImageView?> =
             arrayOfNulls(tutorialAdapter.itemCount)
@@ -94,15 +95,15 @@ class BottomSheetFragment() : BottomSheetDialogFragment() {
                 }
             )
             indicators[i]?.layoutParams = layoutParams
-            layoutTutorialIndicator!!.addView(indicators[i])
+            layoutTutorialIndicator.addView(indicators[i])
         }
     }
 
     @SuppressLint("SetTextI18n")
     private fun setCurrentTutorialIndicators(index: Int) {
-        val childCount = layoutTutorialIndicator!!.childCount
+        val childCount = layoutTutorialIndicator.childCount
         for (i in 0 until childCount) {
-            val imageView: ImageView = layoutTutorialIndicator!!.getChildAt(i) as ImageView
+            val imageView: ImageView = layoutTutorialIndicator.getChildAt(i) as ImageView
             if (i == index) {
                 imageView.setImageDrawable(
                     context?.let {
@@ -124,26 +125,26 @@ class BottomSheetFragment() : BottomSheetDialogFragment() {
             }
         }
         if (index == tutorialAdapter.itemCount - 1) {
-            buttonTutorialAction!!.text = "Start"
+            buttonTutorialAction.text = "Start"
         } else {
-            buttonTutorialAction!!.text = "Next"
+            buttonTutorialAction.text = "Next"
         }
     }
 
     private fun setTutorialItem() {
 
         val tutorialItems: MutableList<TutorialItem> = ArrayList()
-        val itemOne = TutorialItem(R.drawable.on_the_way,"Keep Accurate Records", "To keep records, find the best database")
-        val itemTwo = TutorialItem(R.drawable.pay_online,"Track Sales and Records", "Use the products page to  monitor products!")
-        val itemThree = TutorialItem(R.drawable.eat_together,"Efficient Accounting System", "Use the report page to view income and loss")
-        val itemFour = TutorialItem(R.drawable.on_the_way,"Keep Accurate Records", "To keep records, find the best database")
-        val itemFive = TutorialItem(R.drawable.pay_online,"Track Sales and Records", "Use the products page to  monitor products!")
-        val itemSix = TutorialItem(R.drawable.eat_together,"Efficient Accounting System", "Use the report page to view income and loss")
-        val itemSeven = TutorialItem(R.drawable.on_the_way,"Keep Accurate Records", "To keep records, find the best database")
-        val itemEight = TutorialItem(R.drawable.pay_online,"Track Sales and Records", "Use the products page to  monitor products!")
-        val itemNine = TutorialItem(R.drawable.eat_together,"Efficient Accounting System", "Use the report page to view income and loss")
-        val itemTen = TutorialItem(R.drawable.on_the_way,"Keep Accurate Records", "To keep records, find the best database")
-        val itemEleven = TutorialItem(R.drawable.pay_online,"Track Sales and Records", "Use the products page to  monitor products!")
+        val itemOne = TutorialItem(R.drawable.on_the_way,"Keep accurate records", "To keep records, find the best database")
+        val itemTwo = TutorialItem(R.drawable.pay_online,"Track sales and records", "Use the products page to  monitor products!")
+        val itemThree = TutorialItem(R.drawable.eat_together,"Efficient accounting", "Use the report page to view income and loss")
+        val itemFour = TutorialItem(R.drawable.on_the_way,"Get notifications", "To keep records, find the best database")
+        val itemFive = TutorialItem(R.drawable.pay_online,"Real time alerts", "Use the products page to  monitor products!")
+        val itemSix = TutorialItem(R.drawable.eat_together,"Shop settings", "Use the report page to view income and loss")
+        val itemSeven = TutorialItem(R.drawable.on_the_way,"Mall settings", "To keep records, find the best database")
+        val itemEight = TutorialItem(R.drawable.pay_online,"Inventory system", "Use the products page to  monitor products!")
+        val itemNine = TutorialItem(R.drawable.eat_together,"Multiple shops", "Use the report page to view income and loss")
+        val itemTen = TutorialItem(R.drawable.on_the_way,"Add agents", "To keep records, find the best database")
+        val itemEleven = TutorialItem(R.drawable.pay_online,"Manage products", "Use the products page to  monitor products!")
 
         tutorialItems.add(itemOne)
         tutorialItems.add(itemTwo)
